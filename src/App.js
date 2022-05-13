@@ -15,7 +15,7 @@ function App() {
 		if (!localStorage.getItem('name')) {
 			setShowUserInput(true);
 		}
-	});
+	}, []);
 	return (
 		<AppWrapper>
 			{showUserInput && <UserInput />}
